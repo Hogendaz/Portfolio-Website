@@ -25,7 +25,7 @@ function fortuneGenerator() {
         const fortune = fortuneSayings[randomIdx];        
         const container = document.getElementById('Fortune');
 
-        const text = document.createElement('h4')
+        const text = document.createElement('h2')
         text.textContent = fortune;
         text.style.fontWeight = '700';
         text.style.margin = 'auto';

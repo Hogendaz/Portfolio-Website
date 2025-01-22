@@ -1,107 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 body {
-    font-family: Roboto, sans-serif;
-    background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
-  }
-  
-  header {
-    padding: 20px 0;
-  }
-  
-  header .row,
-  footer .row {
-    display: flex;
-    align-items: center;
-  }
-  
-  h1 {
-    font-weight: 700;
-    margin: 0;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  a {
-    padding: 0 20px;
-    margin: 0;
-  }
-  
-  .jumbotron {
-    display: flex;
-    align-items: center;
-    background-image: url('./Pictures/nasa-hubble-space-telescope-Yh85OWKlS0w-unsplash.jpg');
-    background-size: cover;
-    color: #ffffff;
-    height: 400px;
-  }
-  
-  .jumbotron h2 {
-    font-size: 60px;
-    font-weight: 700;
-    margin: 0;
-    color: #fff;
-  }
-  
-  .jumbotron h3 {
-    margin: 0 0 20px;
-    color: #fff;
-  }
-  
-  section .row img {
-    margin: 0 0 30px;
-    width: 100%;
-  }
-  
-  .col-md-6 {
-    margin: 0 0 30px;
-  }
-  
-  .btn.btn-primary {
-    border-radius: 2px;
-    border: 0px;
-    color: #fbd1d5;
-    background-color: #ffffff;
-  }
-  
-  .btn.btn-primary:hover {
-    color: #ffffff;
-    background-color: #fbd1d5;
-  }
-  
-  .btn-secondary {
-    background-color: #2a70e0;
-    color: #ffffff;
-    margin: 0 0 30px;
-  }
-  
-  .portrait {
-    width:  350px;
-    height: 300px;
-  
-  }
-  
-  figure img {
-    width: 100%;
-    height: auto;
-  }
-  
-  figure {
-    margin-bottom: 30px;
-  }
-  
-  footer {
-    font-size: 12px;
-    padding: 20px 0;
-  }
-  
-  footer .col-sm-8 {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  footer ul {
-    list-style: none;
-  }
-  
+  background-color: black;
+  color:white;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav  a{
+  margin-right: 20px;
+}
+a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 1.25rem;
+
+}
+.middlesection {
+  background-image: url("./Pictures/20150923_165853.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height:400px;
+  gap: 20px;
+}
+.colororange {
+  color:#ffa500;
+}
+
+
+.quote_generator {
+  text-align: center;
+  margin-top: 20px;
+}
+.weblinks {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.weblinks a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+}
+
+.firstsection {
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  width: 80%;
+}
+.firstsection img {
+  padding-right: 10px;
+  border-right: solid white 4px;
+}
+.firstsection div {
+  margin-left: 25px;
+}
+.firstsection p {
+  margin-left: 25px;
+  min-width: 500px;
+  max-width: 600px;
+}
+
+.educationlist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.schoollist {
+  display: flex;
+
+  gap: 20px;
+  padding: 10px;
+}
+.schoollist :hover {
+  background-color: #101010;
+}
+.whiteborder {
+  border-left: solid white 4px;
+  border-right: solid white 4px;
+  padding: 10px;
+
+}
+
+.aligncenter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.resumecvcontainer {
+  display: flex;
+  flex-direction: column;
+}
+.resumecvcontainer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color:#ffa500;
+}
